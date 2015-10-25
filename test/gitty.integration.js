@@ -86,7 +86,7 @@ describe('Gitty', function() {
   describe('.clone()', function() {
 
     it('should clone the repository', function(done) {
-      var url = 'http://localhost:7000/clonefrom';
+      var url = 'git@github.com:mubashir93/testrepo.git';
 
       Gitty.clone(HOME + '/.gitty/cloneto', url, function(err) {
         should.not.exist(err);
